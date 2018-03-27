@@ -1,0 +1,12 @@
+[build-system]
+requires = [
+    "wheel",
+    "setuptools",
+    "six",
+    "numpy>=1.11.0",
+    "scipy>=0.18.0",
+    "matplotlib>=1.3",
+    "emcee",
+    "corner",
+    "astropy",
+]

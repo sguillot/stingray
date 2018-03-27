@@ -1034,9 +1034,10 @@ class SamplingResults(object):
 
         log.info("-- The acceptance fraction is: %f.5"%self.acceptance)
         try:
-            log.info("-- The autocorrelation time is: %f.5"%self.acor)
+            log.info("-- The autocorrelation time is: {}".format(self.acor))
         except AttributeError:
             pass
+
         log.info("R_hat for the parameters is: " + str(self.rhat))
 
         log.info("-- Posterior Summary of Parameters: \n")
